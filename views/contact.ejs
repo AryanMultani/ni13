@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Contact Us</title>
+    <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+<style>
+    
+* {
+	margin:0px;
+	padding:0px;
+}
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing: border-box; }
+
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+
+
+body {
+	background: #ffffff;
+	color: #333;
+	font-weight: normal;
+	font-size: 1em;
+	font-family: 'Roboto', Arial, sans-serif;
+}
+
+input:focus, textarea:focus, keygen:focus, select:focus {
+	outline: none;
+}
+::-moz-placeholder {
+	color: #666;
+	font-weight: 300;
+	opacity: 1;
+}
+
+::-webkit-input-placeholder {
+	color: #666;
+	font-weight: 300;
+}
+
+
+/* Contact Form Styling */
+.container {
+	padding: 0 50px 70px;
+}
+.textcenter {
+	text-align: center;
+}
+.section1 {
+	text-align: center;
+	display: table;
+	width: 100%;
+}
+.section1 .shtext {
+	display: block;
+	margin-top: 20px;
+}
+.section1 .seperator {
+	border-bottom:1px solid #a2a2a2;
+	width: 35px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.section1 h1 {
+	font-size: 40px;
+	color: #2D6F4F;
+	font-weight: normal;
+}
+
+.section2 {
+    width: 1200px;
+    margin: 25px auto;
+}
+.section2 .col2 {
+	width: 48.71%;
+}
+.section2 .col2.first {
+	float: left;
+}
+.section2 .col2.last {
+	float: right;
+}
+.section2 .col2.column2 {
+	padding: 0 30px;
+}
+.section2 span.collig {
+	color: #a2a2a2;
+	margin-right: 10px;
+	display: inline-block;
+}
+.section2 .sec2addr {
+	display: block;
+	line-height: 26px;
+}
+.section2 .sec2addr p:first-child {
+	margin-bottom: 10px;
+}
+.section2 .sec2contactform input[type="text"], 
+.section2 .sec2contactform input[type="email"],
+.section2 .sec2contactform textarea {
+    padding: 18px;
+    border: 0;
+    background: #EDEDED;
+    margin: 7px 0;
+}
+.section2 .sec2contactform textarea {
+	width: 100%;
+	display: block;
+	color: #666;
+  resize:none;
+}
+.section2 .sec2contactform input[type="submit"] {
+	padding: 15px 40px;
+    color: #fff;
+    border: 0;
+    background: #2D6F4F;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 7px 0;
+    cursor: pointer;
+}
+.section2 .sec2contactform h3 {
+	font-weight: normal;
+    margin: 20px 0;
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 19px;
+    color: #2D6F4F;
+}
+
+/* @media querries */
+
+@media only screen and (max-width: 1266px) {
+	.section2 {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 960px) {
+	.container {
+		padding: 0 30px 70px;
+	}
+	.section2 .col2 {
+		width: 100%;
+		display: block;
+	}
+	.section2 .col2.first {
+		margin-bottom: 10px;
+	}
+	.section2 .col2.column2 {
+		padding: 0;
+	}
+	body .sec2map {
+		height: 250px !important;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.section2 .sec2addr {
+		font-size: 14px;
+	}
+	.section2 .sec2contactform h3 {
+		font-size: 16px;
+	}
+	.section2 .sec2contactform input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
+		padding: 10px;
+		margin:3px 0;
+	}
+	.section2 .sec2contactform input[type="submit"] {
+		padding: 10px 30px;
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.section1 h1 {
+		font-size: 28px;
+	}	
+}
+</style>
+</head>
+
+
+<body>
+        <%- include('partials/header') %>
+        <div class="container" style="padding-top: 50px;">
+            <div class="innerwrap">
+                <section class="section2 clearfix">
+                    <div class="col2 column1 first">
+                        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div class="sec2map" style='overflow:hidden;height:550px;width:100%;'><div id='gmap_canvas' style='height:100%;width:100%;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(19.075314480255834,72.88153973865361),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(19.075314480255834,72.88153973865361)});infowindow = new google.maps.InfoWindow({content:'<strong>My Location</strong><br>mumbai<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+                    </div>
+                    <div class="col2 column2 last">
+                        <div class="sec2innercont">
+                            <div class="sec2addr">
+                                <p>Hatiara Mathopara P.O.Hatiara PS.Ecopark Kolkata-700157</p>
+                                <p><span class="collig">Phone :</span> +91 8100118686</p>
+                                <p><span class="collig">Email :</span>info@nigroup.org.in</p>
+                                <p><span class="collig">Fax :</span> +91 90382 05629</p>
+                            </div>
+                        </div>
+                        <div class="sec2contactform">
+                            <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
+                            <form action="">
+                                <div class="clearfix">
+                                    <input class="col2 first" type="text" placeholder="First Name">
+                                    <input class="col2 last" type="text" placeholder="Last Name">
+                                </div>
+                                <div class="clearfix">
+                                    <input  class="col2 first" type="Email" placeholder="Email">
+                                    <input class="col2 last" type="text" placeholder="Contact Number">
+                                </div>
+                                <div class="clearfix">
+                                    <textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
+                                </div>
+                                <div class="clearfix"><input type="submit" value="Send"></div>
+                            </form>
+                        </div>
+    
+                    </div>
+                </section>
+            
+            </div>
+        </div>
+        <%- include('partials/footer') %>
+    </body>
+    
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <!-- Include Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom styles for the contact form */
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #f7fafc;
+}
+
+section {
+  padding-top: 6rem;  /* py-24 equivalent */
+  padding-bottom: 6rem;  /* py-24 equivalent */
+}
+
+/* Styling for the left-side image and overlay text */
+.group .relative {
+  position: relative;
+}
+
+.group img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;  /* rounded-2xl equivalent */
+  background-blend-mode: multiply;
+  background-color: #4f46e5; /* Tailwind indigo-700 */
+}
+
+h1 {
+  position: absolute;
+  top: 2.75rem; /* top-11 equivalent */
+  left: 2.75rem; /* left-11 equivalent */
+  font-size: 2.25rem; /* text-4xl equivalent */
+  color: #fff;
+  font-weight: bold;
+  line-height: 2.5rem; /* leading-10 equivalent */
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-gray-50 {
+  background-color: #f9fafb;
+}
+
+/* Input fields style */
+.input-field {
+  width: 100%;
+  height: 3rem;  /* h-12 equivalent */
+  font-size: 1.125rem;  /* text-lg equivalent */
+  color: #4a4a4a;
+  padding-left: 1rem;  /* pl-4 equivalent */
+  margin-bottom: 2.5rem;  /* mb-10 equivalent */
+  border-radius: 9999px;  /* rounded-full equivalent */
+  border: 1px solid #e2e8f0;  /* border-gray-200 equivalent */
+  background: transparent;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);  /* shadow-sm equivalent */
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #4f46e5;  /* focus:border-indigo-500 equivalent */
+}
+
+/* Radio button group */
+input[type="radio"] {
+  visibility: hidden;
+}
+
+input[type="radio"] + label span {
+  border: 1px solid #e2e8f0;  /* border-gray-300 equivalent */
+  border-radius: 9999px;
+  width: 1rem;  /* w-4 equivalent */
+  height: 1rem;  /* h-4 equivalent */
+  display: inline-block;
+  margin-right: 0.75rem;  /* mr-2 equivalent */
+}
+
+input[type="radio"]:checked + label span {
+  background-color: #4f46e5;  /* checked:bg-indigo-500 equivalent */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+label {
+  cursor: pointer;
+  font-size: 1rem;  /* text-base equivalent */
+  line-height: 1.5rem;  /* leading-6 equivalent */
+  color: #6b7280;  /* text-gray-500 equivalent */
+}
+
+/* Button Styles */
+.btn-send {
+  width: 100%;
+  height: 3rem;  /* h-12 equivalent */
+  background-color: #4f46e5;  /* bg-indigo-600 equivalent */
+  color: #fff;
+  font-size: 1rem;  /* text-base equivalent */
+  font-weight: 600;  /* font-semibold equivalent */
+  line-height: 1.5rem;  /* leading-6 equivalent */
+  border-radius: 9999px;  /* rounded-full equivalent */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);  /* shadow-sm equivalent */
+  transition: background-color 0.7s ease;
+}
+
+.btn-send:hover {
+  background-color: #3730a3;  /* hover:bg-indigo-800 equivalent */
+}
+
+a {
+  text-decoration: none;
+  color: #4f46e5;  /* text-indigo-600 equivalent */
+  font-size: 1rem;  /* text-base equivalent */
+  font-weight: normal;
+}
+
+/* Responsive padding for large screens */
+@media (min-width: 1024px) {
+  .lg\:p-11 {
+    padding: 2.75rem;  /* lg:p-11 equivalent */
+  }
+  
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lg\:rounded-r-2xl {
+    border-radius: 1rem;  /* rounded-r-2xl equivalent */
+  }
+  
+  .lg\:mb-0 {
+    margin-bottom: 0 !important;
+  }
+
+  .lg\:p-8 {
+    padding: 2rem;  /* lg:px-8 equivalent */
+  }
+}
+
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <form action="https://fabform.io/f/xxxxx" method="post">
+    <section class="py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 grid-cols-1">
+          
+          <!-- Left Section with Image and Info -->
+          <div class="lg:mb-0 mb-10">
+            <div class="group w-full h-full">
+              <div class="relative h-full">
+                <img src="https://pagedone.io/asset/uploads/1696488602.png" alt="Contact Us" class="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-indigo-700"/>
+                <h1 class="font-manrope text-white text-4xl font-bold leading-10 absolute top-11 left-11">Contact us</h1>
+                <div class="absolute bottom-0 w-full lg:p-11 p-5">
+                  <div class="bg-white rounded-lg p-6">
+                    <a href="javascript:;" class="flex items-center mb-6">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.3092 18.3098C22.0157 18.198 21.8689 18.1421 21.7145 18.1287C21.56 18.1154 21.4058 18.1453 21.0975 18.205L17.8126 18.8416C17.4392 18.9139 17.2525 18.9501 17.0616 18.9206C16.8707 18.891 16.7141 18.8058 16.4008 18.6353C13.8644 17.2551 12.1853 15.6617 11.1192 13.3695C10.9964 13.1055 10.935 12.9735 10.9133 12.8017C10.8917 12.6298 10.9218 12.4684 10.982 12.1456L11.6196 8.72559C11.6759 8.42342 11.7041 8.27233 11.6908 8.12115C11.6775 7.96998 11.6234 7.82612 11.5153 7.5384L10.6314 5.18758C10.37 4.49217 10.2392 4.14447 9.95437 3.94723C9.6695 3.75 9.29804 3.75 8.5551 3.75H5.85778C4.58478 3.75 3.58264 4.8018 3.77336 6.06012C4.24735 9.20085 5.64674 14.8966 9.73544 18.9853C14.0295 23.2794 20.2151 25.1426 23.6187 25.884C24.9335 26.1696 26.0993 25.1448 26.0993 23.7985V21.2824C26.0993 20.5428 26.0993 20.173 25.9034 19.8888C25.7076 19.6046 25.362 19.4729 24.6708 19.2096L22.3092 18.3098Z" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <h5 class="text-black text-base font-normal leading-6 ml-5">470-601-1911</h5>
+                    </a>
+                    <a href="https://veilmail.io/irish-geoff" class="flex items-center mb-6">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.81501 8.75L10.1985 13.6191C12.8358 15.2015 14.1544 15.9927 15.6032 15.9582C17.0519 15.9237 18.3315 15.0707 20.8905 13.3647L27.185 8.75M12.5 25H17.5C22.214 25 24.5711 25 26.0355 23.5355C27.5 22.0711 27.5 19.714 27.5 15C27.5 10.286 27.5 7.92893 26.0355 6.46447C24.5711 5 22.214 5 17.5 5H12.5C7.78595 5 5.42893 5 3.96447 6.46447C2.5 7.92893 2.5 10.286 2.5 15C2.5 19.714 2.5 22.0711 3.96447 23.5355C5.42893 25 7.78595 25 12.5 25Z" stroke="#4F46E5" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                      <h5 class="text-black text-base font-normal leading-6 ml-5">https://veilmail.io/irish-geoff</h5>
+                    </a>
+                    <a href="javascript:;" class="flex items-center">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 12.9169C25 17.716 21.1939 21.5832 18.2779 24.9828C16.8385 26.6609 16.1188 27.5 15 27.5C13.8812 27.5 13.1615 26.6609 11.7221 24.9828C8.80612 21.5832 5 17.716 5 12.9169C5 10.1542 6.05357 7.5046 7.92893 5.55105C9.8043 3.59749 12.3478 2.5 15 2.5C17.6522 2.5 20.1957 3.59749 22.0711 5.55105C23.9464 7.5046 25 10.1542 25 12.9169Z" stroke="#4F46E5" stroke-width="2"/>
+                        <path d="M17.5 11.6148C17.5 13.0531 16.3807 14.219 15 14.219C13.6193 14.219 12.5 13.0531 12.5 11.6148C12.5 10.1765 13.6193 9.01058 15 9.01058C16.3807 9.01058 17.5 10.1765 17.5 11.6148Z" stroke="#4F46E5" stroke-width="2"/>
+                      </svg>
+                      <h5 class="text-black text-base font-normal leading-6 ml-5">654 Sycamore Avenue, Meadowville, WA 76543</h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Section with Form -->
+          <div class="bg-gray-50 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl">
+            <h2 class="text-indigo-600 font-manrope text-4xl font-semibold leading-10 mb-11">Send Us A Message</h2>
+            <input type="text" class="input-field" placeholder="Name">
+            <input type="text" class="input-field" placeholder="Email">
+            <input type="text" class="input-field" placeholder="Phone">
+            
+            <div class="mb-10">
+              <h4 class="text-gray-500 text-lg font-normal leading-7 mb-4">Preferred method of communication</h4>
+              <div class="flex">
+                <div class="flex items-center mr-11">
+                  <input id="radio-group-1" type="radio" name="radio-group" class="hidden">
+                  <label for="radio-group-1" class="radio-label">Email</label>
+                </div>
+                <div class="flex items-center">
+                  <input id="radio-group-2" type="radio" name="radio-group" class="hidden">
+                  <label for="radio-group-2" class="radio-label">Phone</label>
+                </div>
+              </div>
+            </div>
+
+            <input type="text" class="input-field" placeholder="Message">
+
+            <button class="btn-send">Send</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </form>
+
+  <a href="https://fabform.io">form backend service</a>
+
+</body>
+</html>
